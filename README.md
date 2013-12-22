@@ -4,11 +4,15 @@ A simple jquery plugin, that expands a element to the width of the viewport, no 
 
 ##Usage##
 
-<pre>$('.yourelement').elementXpander();</pre>
+
+
+<pre>
+$('.yourelement').elementXpander();</pre>
 You Probably need to set at least the width of the page wrapper the default value is .page.
 <pre>$('.yourelement').elementXpander({
 pagecontainer   : '.yourwrapper'
-});</pre>
+});
+</pre>
 
 ##Configuration##
 

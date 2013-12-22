@@ -2,7 +2,7 @@
 
 A simple jquery plugin, that expands a element to the width of the viewport, no matter where it is located in the dom.
 
-##Usage
+##Usage##
 
 <pre>$('.yourelement').elementXpander();</pre>
 You Probably need to set at least the width of the page wrapper the default value is .page.
@@ -10,7 +10,7 @@ You Probably need to set at least the width of the page wrapper the default valu
 pagecontainer   : '.yourwrapper'
 });</pre>
 
-###Configuration
+##Configuration##
 
 <pre>
 pagecontainer   : '.page',

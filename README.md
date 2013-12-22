@@ -19,3 +19,6 @@ height          : null, // eg 80 sets the height of the container to 80% of the 
 offsetx         : 0, // you can enter -20px or -10% to have a offset to the left.
 complete        : null  // a callback everytime the width of the element is recalculated e.g. After browser resizing e.g complete    : function() { alert( 'callback!' ) }
 </pre>
+
+
+

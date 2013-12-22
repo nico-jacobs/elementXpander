@@ -10,7 +10,7 @@ You Probably need to set at least the width of the page wrapper the default valu
 pagecontainer   : '.yourwrapper'
 });</pre>
 
-##Configuration
+###Configuration
 
 <pre>
 pagecontainer   : '.page',

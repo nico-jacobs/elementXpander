@@ -18,6 +18,7 @@ jQuery(document).ready(
                 var settings = $.extend({
                     pagecontainer   : '.page',
                     position        : 'relative',
+                    wrap            : null,
                     width           : null,
                     height          : null,
                     offsetx         : null,
@@ -55,7 +56,7 @@ jQuery(document).ready(
 
                 return $(this).each(function () {
 
-                    $(element2xpand).css({ "position": (settings.position), "margin-left": '-' + leftoffset + 'px', "width": browserwidth + 'px'});
+                    $(element2xpand).css({ "display": "inline-block", "position": (settings.position), "margin-left": '-' + leftoffset + 'px', "width": browserwidth + 'px'});
 
                     if (settings.height) {
                         var browserheight = $(window).height();
@@ -66,6 +67,13 @@ jQuery(document).ready(
 
                     if ( $.isFunction( settings.complete ) ) {
                         settings.complete.call( this );
+                    }
+
+                    if (settings.wrap) {
+                        if ((settings.wrap) == 'yes')
+                        {
+                            $(element2xpand).wrapAll('<div class="element2xpand-wrap" style="position: relative; display: inline-block; width: 0px;"></div>');
+                        }
                     }
 
                 });

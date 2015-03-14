@@ -17,6 +17,7 @@ jQuery(document).ready(
                 // Establish our default settings
                 var settings = $.extend({
                     pagecontainer   : '.page',
+                    position        : 'relative',
                     width           : null,
                     height          : null,
                     offsetx         : null,
@@ -54,11 +55,11 @@ jQuery(document).ready(
 
                 return $(this).each(function () {
 
-                    $(element2xpand).css({ "position": 'relative', "margin-left": '-' + leftoffset + 'px', "width": browserwidth + 'px'});
+                    $(element2xpand).css({ "position": (settings.position), "margin-left": '-' + leftoffset + 'px', "width": browserwidth + 'px'});
 
                     if (settings.height) {
-                    var browserheight = $(window).height();
-                    var height = browserheight * (settings.height) / 100;
+                        var browserheight = $(window).height();
+                        var height = browserheight * (settings.height) / 100;
                         $(element2xpand).css({ "height": height});
                     }
 

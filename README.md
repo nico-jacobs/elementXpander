@@ -1,8 +1,20 @@
-#elementXpander
+# elementXpander
 
-A simple jquery plugin, that expands a element to the width of the viewport, no matter where it is located in the dom.
+A simple jquery plugin, that expands an element to the width of the viewport, no matter where it is located in the dom.
 
-##Usage##
+# deprecated:
+you should probably use a pure grid release technic
+
+<pre>
+.u-release {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+</pre>
+
+more explanation here: [https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/](https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/)
+
+## Usage
 
 
 
@@ -25,6 +37,3 @@ height          : null, // eg 80 sets the height of the container to 80% of the 
 offsetx         : 0, // you can enter -20px or -10% to have a offset to the left.
 complete        : null  // a callback everytime the width of the element is recalculated e.g. After browser resizing e.g complete    : function() { alert( 'callback!' ) }
 </pre>
-
-
-
